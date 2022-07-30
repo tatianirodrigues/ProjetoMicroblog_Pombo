@@ -44,15 +44,15 @@ public class PrincipalComMenu {
 			String cpf = entrada.nextLine();
 			System.out.println("Qual e o seu e-mail?");
 			String email = entrada.nextLine();
-			System.out.println("Escolha uma senha apenas com numeros:");
-			int senha = entrada.nextInt();
+			//System.out.println("Escolha uma senha apenas com numeros:");
+			//int senha = entrada.nextInt();
 			entrada.nextLine();	
 			System.out.println("Columba livia é um nome muito chato, escolha um nome de Pombo unico para voce!");
 			String arroba = entrada.nextLine();				
 			System.out.println("voce e um adm? 1- sim, 2- nao");
 			
 				
-			Usuario usuario = new Usuario (nome, email, cpf,arroba, senha);
+			Usuario usuario = new Usuario (nome, email, cpf,arroba);
 			usuarios.add(usuario);
 	
 			System.out.println("***********************+****************************************************************");

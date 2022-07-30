@@ -10,8 +10,8 @@ package entidade;
 public class UsuarioAdministrador extends Usuario{
 	
 	//Construtor
-	public UsuarioAdministrador(String nome, String email, String cpf, String arroba, int senha) {
-		super(nome, email, cpf, arroba, senha);
+	public UsuarioAdministrador(String nome, String email, String cpf, String arroba) {
+		super(nome, email, cpf, arroba);
 	}
 	
 	//Metodos

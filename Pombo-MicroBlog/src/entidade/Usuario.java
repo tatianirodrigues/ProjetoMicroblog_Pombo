@@ -14,17 +14,15 @@ public class Usuario {
 	private String arroba;
 	private String email;
 	private String cpf;
-	private int senha;
 	private ArrayList <Pruu> pruus;
 	
 	//Construtor
-	public Usuario(String nome, String email, String cpf, String arroba,int senha ) {
+	public Usuario(String nome, String email, String cpf, String arroba) {
 		super();
 		this.nome = nome;
 		this.email = email;
 		this.cpf = cpf;
 		this.arroba = arroba;
-		this.senha = senha;
 	}
 	public Usuario() {
 		
@@ -64,10 +62,6 @@ public class Usuario {
 	}
 	public void setPruus(ArrayList<Pruu> pruus) {
 		this.pruus = pruus;
-	}
-
-	public int getSenha() {
-		return senha;
 	}
 	
 }

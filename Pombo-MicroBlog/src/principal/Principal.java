@@ -22,12 +22,12 @@ public class Principal {
 	public static void main(String[] args) {
 		ArrayList <Usuario> usuarios =  new ArrayList();
 
-		Usuario anna = new Usuario("Anna de Arendelle", "annadofilmefrozen@tatimail.com", "4563728929-89", "aninhaPrincesa",11);
+		Usuario anna = new Usuario("Anna de Arendelle", "annadofilmefrozen@tatimail.com", "4563728929-89", "aninhaPrincesa");
 		usuarios.add(anna);
-		Usuario elsa = new Usuario ("Elsa de Arendelle", "elsadofilmefrozen@tatimail.com", "4387273827-22", "aVerdadeiraFrozen",22);
+		Usuario elsa = new Usuario ("Elsa de Arendelle", "elsadofilmefrozen@tatimail.com", "4387273827-22", "aVerdadeiraFrozen");
 		usuarios.add(elsa);
 
-		UsuarioAdministrador olaf = new UsuarioAdministrador ("Olaf Snowman", "olafdofilmefrozen@tatimail.com", "8372856735-88", "bonecoDeGelo",33);
+		UsuarioAdministrador olaf = new UsuarioAdministrador ("Olaf Snowman", "olafdofilmefrozen@tatimail.com", "8372856735-88", "bonecoDeGelo");
 		usuarios.add(olaf);
 
 		//Pruus da Ana
@@ -53,6 +53,8 @@ public class Principal {
 		olaf.setPruus(pruusDoOlaf);
 		Pruu primeiroPruuDoOlaf = new Pruu ("Eu gosto de abraços quentinhos!!", olaf);
 		pruusDoOlaf.add(primeiroPruuDoOlaf);
+		Pruu segundoPruuDoOlaf = new Pruu ("Voce sabia que agua tem memoria?", olaf);
+		pruusDoOlaf.add(segundoPruuDoOlaf);
 
 		//ver todos os Pruus da Ana
 		System.out.println("*************************** PRUUS DA ANA ***************************");
@@ -63,11 +65,11 @@ public class Principal {
 		
 		olaf.bloquearPruu(segundoPruuDaAna);
 		elsa.darLike(primeiroPruuDoOlaf);
+		anna.darLike(primeiroPruuDoOlaf);
 		
 		//ver todos os Pruus
 		System.out.println("*************************** TODOS OS PRUUS ***************************");
 		
-
 		for(Usuario usuarioAtual: usuarios) {
 			for (Pruu pruuAtual: usuarioAtual.getPruus()) {
 				System.out.println(pruuAtual);
